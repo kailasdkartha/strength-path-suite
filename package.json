@@ -8,7 +8,9 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "db:push": "npx --yes supabase db push --db-url postgresql://postgres:gCdUXJrfeuaF5r1S@db.lvfqvrranfyqcpbcxdgh.supabase.co:5432/postgres",
+    "db:reset": "npx --yes supabase db reset --db-url postgresql://postgres:gCdUXJrfeuaF5r1S@db.lvfqvrranfyqcpbcxdgh.supabase.co:5432/postgres --non-interactive"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
